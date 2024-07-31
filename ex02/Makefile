@@ -3,7 +3,7 @@ NAME= program.exe
 SRC= main.o 
 SRC+= 
 
-HEADERS= 
+HEADERS= MutantStack.hpp
 CC= c++
 
 val = -ggdb3

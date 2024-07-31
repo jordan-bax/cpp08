@@ -1,9 +1,9 @@
 NAME= program.exe
 
-SRC= main.o 
+SRC= main.o Span.o
 SRC+= 
 
-HEADERS= easyfind.hpp
+HEADERS= Span.hpp
 CC= c++
 
 val = -ggdb3

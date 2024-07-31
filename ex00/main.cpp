@@ -14,8 +14,8 @@ int	main(void)
 	std::vector<int> vector_list(3);
 	std::srand(unsigned(time(NULL)));
 	std::vector<int> v(100);
+	std::vector<int> generate(100);
 	std::generate(v.begin(), v.end(), &random_number);
-	//std::ranges::generate_random(lst.begin())
 
 	vector_list.push_back(4);
 	vector_list.push_back(5);
@@ -29,7 +29,6 @@ int	main(void)
 	{
 		std::cout << *easyfind(lst, 5) << std::endl;
 		std::cout << *easyfind(vector_list, 5) << std::endl;
-		std::cout << *std::adjacent_find(lst.begin(), lst.end()) << std::endl;
 		std::cout << *easyfind(v, 5) << std::endl;
 		/* code */
 	}

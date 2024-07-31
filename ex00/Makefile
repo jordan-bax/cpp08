@@ -1,6 +1,6 @@
 NAME= program.exe
 
-SRC= main.o 
+SRC= main.o easyfind.o
 SRC+= 
 
 HEADERS= easyfind.hpp
