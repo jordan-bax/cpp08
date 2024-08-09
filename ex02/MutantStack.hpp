@@ -11,7 +11,6 @@ private:
 
 public:
 	MutantStack():_begin(0){};
-	// MutantStack(  );
 	MutantStack( MutantStack const & src ){*this = src;};
 	~MutantStack(){};
 

@@ -12,9 +12,11 @@ private:
 public:
 	Span( unsigned int Number );
 	Span( Span const & src );
+	Span( std::vector<int> const & src );
 	~Span();
 
 	Span & operator=( Span const & rhs );
+	Span & operator=( std::vector<int> const & rhs );
 	void	addNumber(int Number);
 	int 	shortestSpan() const;
 	int 	longestSpan() const;

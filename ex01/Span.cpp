@@ -9,8 +9,11 @@ Span::Span( unsigned int Number ) {
 	std::cout << "span is created"<< std::endl;
 }
 Span::Span( Span const & src ) {
-	// this->_numbers = new std::vector<int>[src._numbers->max_size()];
-	this->_numbers = src._numbers;// needs work
+	this->_numbers = src._numbers;
+	std::cout << "span is created"<< std::endl;
+}
+Span::Span( std::vector<int> const & src ) {
+	this->_numbers = src;
 	std::cout << "span is created"<< std::endl;
 }
 Span::~Span() {
@@ -18,8 +21,11 @@ Span::~Span() {
 }
 
 Span & Span::operator=( Span const & rhs ) {
-	// this->_numbers = new std::vector<int>[rhs._numbers->max_size()];
-	this->_numbers = rhs._numbers;// needs work
+	this->_numbers = rhs._numbers;
+	return *this;
+}
+Span & Span::operator=( std::vector<int> const & rhs ) {
+	this->_numbers = rhs;
 	return *this;
 }
 void	Span::addNumber(int Number){
@@ -60,6 +66,6 @@ void	Span::display_content()const{
 }
 
 std::ostream & operator<<( std::ostream & o, Span const & rhs) {
-	o << rhs.shortestSpan() << ", " << rhs.longestSpan() << ", ";
+	o << "shortest span :"<< rhs.shortestSpan() << ", longest span :" << rhs.longestSpan() << ", ";
 	return o;
 }

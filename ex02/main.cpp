@@ -11,8 +11,8 @@ int main()
 	mstack.push(5);
 	mstack.push(17);
 	std::cout << test_stack.top() << std::endl;
-	std::cout << mstack.top() << " " <<mstack[1] << std::endl;
-	mstack.pop();
+	std::cout << mstack.top() << " " <<mstack[1] << std::endl;// displays 17 2 diferent ways
+	mstack.pop(); // remove 17
 	std::cout << mstack.size() << std::endl << std::endl;
 	mstack.push(3);
 	mstack.push(5);
@@ -30,6 +30,7 @@ int main()
 		++it;
 	}
 	MutantStack<int> mstack2(mstack);
+	// extra test / end of subject test+
 	mstack.pop();
 	it = mstack2.begin();
 	ite = mstack2.end();
